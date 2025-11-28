@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Java
+*.class
+
+# Database
+*.sqlite
+*.db
+
+# Node / npm
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
