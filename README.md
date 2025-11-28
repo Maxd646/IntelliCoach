@@ -9,45 +9,45 @@
 ```
 IntelliCoach/
 │
-├── java/ # Java backend (OOP logic)
+├── java/                            # Java backend (OOP logic)
 │ ├── src/
-│ │ ├── models/ # Java data classes
+│ │ ├── models/                       # Java data classes
 │ │ │ ├── User.java
 │ │ │ ├── Activity.java
 │ │ │ └── ProgressLog.java
-│ │ ├── services/ # Core logic / operations
+│ │ ├── services/                       # Core logic / operations
 │ │ │ ├── ActivityService.java
 │ │ │ ├── ProgressService.java
 │ │ │ └── RecommendationService.java
-│ │ ├── controllers/ # Controllers for GUI or APIs
+│ │ ├── controllers/                       # Controllers for GUI or APIs
 │ │ │ └── MainController.java
-│ │ ├── utils/ # Helper classes
-│ │ │ ├── FileHandler.java # Read/write JSON or CSV
+│ │ ├── utils/                              # Helper classes
+│ │ │ ├── FileHandler.java                  # Read/write JSON or CSV
 │ │ │ └── JsonParser.java
-│ │ └── Main.java # Entry point
-│ └── data/ # Java-generated data for Streamlit
+│ │ └── Main.java                            # Entry point
+│ └── data/                                  # Java-generated data for Streamlit
 │   ├── activities.json
 │   └── users.json
 │
-├── streamlit_app/ # Python + Streamlit dashboard
-│ ├── app.py # Main dashboard
-│ ├── analytics/ # Analytics & visualization
+├── streamlit_app/                            # Python + Streamlit dashboard
+│ ├── app.py                                  # Main dashboard
+│ ├── analytics/                               # Analytics & visualization
 │ │ ├── charts.py
 │ │ ├── progress_analysis.py
 │ │ └── stats.py
-│ ├── recommendations/ # Recommendations module
+│ ├── recommendations/                          # Recommendations module
 │ │ └── recommend.py
-│ ├── components/ # Optional modular UI components
+│ ├── components/                                # Optional modular UI components
 │ │ └── sidebar.py
-│ └── data/ # Processed/merged data for dashboard
+│ └── data/                                       # Processed/merged data for dashboard
 │   └── merged_data.csv
 │
-├── database/ # SQLite or JSON DB or PostgreSQL
+├── database/                                     # SQLite or JSON DB or PostgreSQL
 │ ├── student_db.sqlite
 │ └── logs/
 │   └── daily_logs.json
 │
-├── tests/ # Automated tests
+├── tests/                                          # Automated tests
 │ ├── java_tests/
 │ │ ├── TestActivity.java
 │ │ └── TestProgressService.java
@@ -57,27 +57,27 @@ IntelliCoach/
 │ └── integration_tests/
 │   └── test_java_python_bridge.py
 │
-├── docs/ # Documentation
+├── docs/                                            # Documentation
 │ ├── proposal.pdf
 │ ├── system_design.md
 │ ├── requirements.md
 │ └── reports/
 │   └── final_report.docx
 │
-├── config/ # Config & environment settings
+├── config/                                          # Config & environment settings
 │ ├── settings.json
 │ └── environment.env
 │
-├── lib/ # External dependencies
-│ ├── external_jars/ # Java libraries
-│ └── python_env/ # Python virtual environment
+├── lib/                                              # External dependencies
+│ ├── external_jars/                                  # Java libraries
+│ └── python_env/                                      # Python virtual environment
 │
-├── scripts/ # Optional utility scripts
-│ ├── java_to_python_sync.py # Auto-sync Java JSON to Python
+├── scripts/                                           # Optional utility scripts
+│ ├── java_to_python_sync.py                           # Auto-sync Java JSON to Python
 │ └── data_cleaner.py
 │
 ├── README.md
-├── requirements.txt # Python dependencies
+├── requirements.txt                                     # Python dependencies
 └── .gitignore
 ```
 
@@ -85,21 +85,21 @@ IntelliCoach/
 
 ## Technologies Used
 
-- **Java (OOP)** – Core backend logic, activity logging, and data management  
-- **Python + Streamlit** – Interactive dashboards, analytics, and visualizations  
-- **PostgreSQL / MySQL** – Optional relational database for persistent storage  
-- **JSON / CSV** – Data interchange between Java and Streamlit  
+- **Java (OOP)** – Core backend logic, activity logging, and data management
+- **Python + Streamlit** – Interactive dashboards, analytics, and visualizations
+- **PostgreSQL / MySQL** – Optional relational database for persistent storage
+- **JSON / CSV** – Data interchange between Java and Streamlit
 - **Libraries:** Pandas, Matplotlib, Plotly (Python); JDBC (Java)
 
 ---
 
 ## Features
 
-1. **Activity Logging:** Students can record daily academic and extracurricular activities.  
-2. **Progress Tracking:** Visualize daily, weekly, and monthly performance.  
-3. **Analytics Dashboard:** Bar charts, line charts, and statistics for progress monitoring.  
-4. **Personalized Recommendations:** Suggests areas for improvement based on logged activities.  
-5. **Integration:** Java handles structured logic and data storage; Streamlit provides visualization.  
+1. **Activity Logging:** Students can record daily academic and extracurricular activities.
+2. **Progress Tracking:** Visualize daily, weekly, and monthly performance.
+3. **Analytics Dashboard:** Bar charts, line charts, and statistics for progress monitoring.
+4. **Personalized Recommendations:** Suggests areas for improvement based on logged activities.
+5. **Integration:** Java handles structured logic and data storage; Streamlit provides visualization.
 
 ---
 
