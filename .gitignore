@@ -1,21 +1,30 @@
-# Python
-__pycache__/
-*.pyc
-
-# Java
+# Compiled class files
 *.class
+build/
 
-# Database
-*.sqlite
-*.db
+# Java packages
+*.jar
+*.war
+*.ear
 
-# Node / npm
-node_modules/
+# Java temporary files
+*.log
+*.tmp
 
-# System files
+# IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# OS files
 .DS_Store
 Thumbs.db
 
-# IDE / editor
-.vscode/
-.idea/
+# Libraries
+lib/
+database/
+# JavaFX SDK binaries (optional if you don't want to track your local SDK)
+# C:\Users\hp\Downloads\openjfx-25.0.1_windows-x64_bin-sdk\javafx-sdk-25.0.1\lib
+# You generally don't commit SDKs
+
+

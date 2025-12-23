@@ -1,0 +1,478 @@
+/* IntelliCoach - Clean Colorful Stylesheet */
+
+/* ============================================
+   Global Styles
+   ============================================ */
+
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* ============================================
+   COLORFUL LOGIN & REGISTRATION BACKGROUNDS
+   ============================================ */
+
+.login-background-colorful {
+    -fx-background-color: #ff9a9e;
+}
+
+.register-background-colorful {
+    -fx-background-color: #a8edea;
+}
+
+.welcome-panel {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 0 20 20 0;
+}
+
+.login-card-colorful {
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+    -fx-effect: dropshadow(gaussian, rgba(255, 105, 180, 0.4), 25, 0, 0, 15);
+    -fx-border-color: #ff6b6b;
+    -fx-border-width: 3;
+    -fx-border-radius: 25;
+}
+
+.register-card-colorful {
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+    -fx-effect: dropshadow(gaussian, rgba(78, 205, 196, 0.4), 30, 0, 0, 20);
+    -fx-border-color: #4ecdc4;
+    -fx-border-width: 4;
+    -fx-border-radius: 30;
+}
+
+.colorful-footer {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 1 0 0 0;
+}
+
+.register-footer-colorful {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: rgba(78, 205, 196, 0.3);
+    -fx-border-width: 2 0 0 0;
+}
+
+/* ============================================
+   COLORFUL WELCOME & BRAND STYLES
+   ============================================ */
+
+.welcome-large {
+    -fx-font-size: 24px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #2c3e50;
+}
+
+.brand-title {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e74c3c;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 2, 2);
+}
+
+.brand-subtitle {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e74c3c;
+}
+
+.brand-description {
+    -fx-font-size: 16px;
+    -fx-text-fill: #34495e;
+    -fx-line-spacing: 3;
+}
+
+.features-box {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-background-radius: 15;
+    -fx-padding: 20;
+}
+
+.feature-item {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+/* ============================================
+   LOGIN CARD STYLES
+   ============================================ */
+
+.login-card-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e74c3c;
+}
+
+.login-card-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #7f8c8d;
+}
+
+/* ============================================
+   REGISTRATION STYLES
+   ============================================ */
+
+.register-welcome {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #16a085;
+}
+
+.register-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.register-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #34495e;
+    -fx-line-spacing: 2;
+}
+
+.register-form-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.register-textfield {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-font-size: 14px;
+    -fx-padding: 12;
+}
+
+.register-textfield:focused {
+    -fx-border-color: #1abc9c;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(26, 188, 156, 0.3), 10, 0, 0, 3);
+}
+
+/* ============================================
+   COLORFUL FORM STYLES
+   ============================================ */
+
+.form-label-colorful {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e74c3c;
+}
+
+.colorful-textfield {
+    -fx-background-color: #ffeaa7;
+    -fx-border-color: #fdcb6e;
+    -fx-border-width: 2;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-font-size: 14px;
+    -fx-padding: 12;
+}
+
+.colorful-textfield:focused {
+    -fx-border-color: #e17055;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(225, 112, 85, 0.3), 8, 0, 0, 3);
+}
+
+/* ============================================
+   COLORFUL BUTTON STYLES
+   ============================================ */
+
+.colorful-btn {
+    -fx-background-radius: 15;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 4);
+}
+
+.btn-login {
+    -fx-background-color: #ff7675;
+    -fx-text-fill: white;
+}
+
+.btn-login:hover {
+    -fx-background-color: #e84393;
+    -fx-effect: dropshadow(gaussian, rgba(232, 67, 147, 0.4), 15, 0, 0, 8);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.register-btn-main {
+    -fx-background-color: #00b894;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 18;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 184, 148, 0.4), 12, 0, 0, 6);
+}
+
+.register-btn-main:hover {
+    -fx-background-color: #00a085;
+    -fx-effect: dropshadow(gaussian, rgba(0, 184, 148, 0.6), 20, 0, 0, 10);
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+}
+
+/* ============================================
+   COLORFUL LINK STYLES
+   ============================================ */
+
+.link-button-colorful {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e74c3c;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.link-button-colorful:hover {
+    -fx-text-fill: #c0392b;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.link-text-colorful {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 14px;
+}
+
+.register-link-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #16a085;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-cursor: hand;
+}
+
+.register-link-button:hover {
+    -fx-text-fill: #138d75;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.register-link-text {
+    -fx-text-fill: #5d6d7e;
+    -fx-font-size: 14px;
+}
+
+/* ============================================
+   COLORFUL FOOTER STYLES
+   ============================================ */
+
+.colorful-footer-text {
+    -fx-font-size: 13px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+.register-footer-text {
+    -fx-font-size: 13px;
+    -fx-text-fill: #16a085;
+    -fx-font-weight: bold;
+}
+
+/* ============================================
+   DASHBOARD STYLES
+   ============================================ */
+
+.dashboard-welcome {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d3748;
+}
+
+.dashboard-instruction {
+    -fx-font-size: 16px;
+    -fx-text-fill: #4a5568;
+    -fx-line-spacing: 2;
+}
+
+.tips-card {
+    -fx-background-color: #f7fafc;
+    -fx-background-radius: 15;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1;
+    -fx-border-radius: 15;
+}
+
+.tips-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d3748;
+}
+
+.tip-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #4a5568;
+}
+
+/* ============================================
+   NAVIGATION CARDS
+   ============================================ */
+
+.nav-card {
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 3);
+}
+
+.nav-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.nav-card-success {
+    -fx-background-color: #48bb78;
+}
+
+.nav-card-primary {
+    -fx-background-color: #4299e1;
+}
+
+.nav-card-warning {
+    -fx-background-color: #ed8936;
+}
+
+.nav-card-purple {
+    -fx-background-color: #9f7aea;
+}
+
+.nav-card-danger {
+    -fx-background-color: #f56565;
+}
+
+.nav-icon {
+    -fx-font-size: 32px;
+    -fx-text-fill: white;
+}
+
+.nav-card-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.nav-card-desc {
+    -fx-font-size: 13px;
+    -fx-text-fill: rgba(255, 255, 255, 0.9);
+}
+
+.nav-arrow {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.dashboard-footer {
+    -fx-background-color: #f7fafc;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* ============================================
+   BASIC STYLES
+   ============================================ */
+
+.background-light {
+    -fx-background-color: #f5f5f5;
+}
+
+.header-primary {
+    -fx-background-color: #2196F3;
+}
+
+.header-success {
+    -fx-background-color: #4CAF50;
+}
+
+.title-large {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.title-medium {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.title-small {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.title-white {
+    -fx-text-fill: white;
+}
+
+.title-primary {
+    -fx-text-fill: #2196F3;
+}
+
+.subtitle {
+    -fx-font-size: 16px;
+}
+
+.subtitle-white {
+    -fx-text-fill: white;
+}
+
+.subtitle-gray {
+    -fx-text-fill: #666;
+}
+
+.btn {
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.btn-primary {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #1976D2;
+}
+
+.btn-success {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.btn-success:hover {
+    -fx-background-color: #45a049;
+}
+
+.btn-white-success {
+    -fx-background-color: white;
+    -fx-text-fill: #4CAF50;
+}
+
+.message-success {
+    -fx-text-fill: #4CAF50;
+}
+
+.message-error {
+    -fx-text-fill: #f44336;
+}
+
+.footer {
+    -fx-background-color: #e0e0e0;
+}
+
+.footer-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #666;
+}

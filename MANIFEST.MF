@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: com.IntelliCoachApp
+Class-Path: sqlite-jdbc-3.44.1.0.jar
