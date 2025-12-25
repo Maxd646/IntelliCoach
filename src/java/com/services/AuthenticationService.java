@@ -110,7 +110,7 @@ public class AuthenticationService extends BaseService {
     }
 
     /**
-     * Simple password encoding (use proper hashing in production)
+     * Simple password encoding
      */
     private String encodePassword(String password) {
         return password + "_encoded";

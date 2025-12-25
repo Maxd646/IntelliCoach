@@ -89,7 +89,7 @@ public class TestDatabase {
                     }
                 }
             } else {
-                System.out.println("❌ Login failed: " + loginResult.getMessage());
+                System.out.println(" Login failed: " + loginResult.getMessage());
             }
 
             System.out.println("\n═══════════════════════════════════════════════════════");
@@ -101,7 +101,7 @@ public class TestDatabase {
             System.out.println("       com.intellicoach.IntelliCoachApp");
 
         } catch (Exception e) {
-            System.err.println("❌ Test failed: " + e.getMessage());
+            System.err.println(" Test failed: " + e.getMessage());
             e.printStackTrace();
         }
     }

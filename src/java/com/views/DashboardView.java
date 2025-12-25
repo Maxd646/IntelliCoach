@@ -1,5 +1,7 @@
 package com.views;
 
+import javafx.scene.control.Label;
+
 import com.models.User;
 import com.services.AuthenticationService;
 import javafx.geometry.Insets;
@@ -34,7 +36,11 @@ public class DashboardView {
         root.setTop(createHeader());
 
         // Center: Navigation buttons
-        root.setCenter(createNavigationPanel());
+        ScrollPane scrollPane = new ScrollPane(createNavigationPanel());
+        scrollPane.setFitToWidth(true);
+        scrollPane.setFitToHeight(true);
+
+        root.setCenter(scrollPane);
 
         // Bottom: User info
         root.setBottom(createFooter());

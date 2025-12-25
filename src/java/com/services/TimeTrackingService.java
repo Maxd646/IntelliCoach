@@ -13,11 +13,11 @@ import java.util.Map;
  */
 public class TimeTrackingService {
     private ActivitySessionDAO sessionDAO;
-    
+
     public TimeTrackingService() {
         this.sessionDAO = new ActivitySessionDAO();
     }
-    
+
     /**
      * Start a new activity
      * Automatically stops any currently active activity
@@ -26,7 +26,7 @@ public class TimeTrackingService {
         LocalDateTime now = LocalDateTime.now();
         return sessionDAO.startSession(userId, activityType, now);
     }
-    
+
     /**
      * Stop the currently active activity
      */
@@ -34,56 +34,56 @@ public class TimeTrackingService {
         LocalDateTime now = LocalDateTime.now();
         return sessionDAO.stopActiveSession(userId, now);
     }
-    
+
     /**
      * Get the currently active session
      */
     public ActivitySession getActiveSession(int userId) {
         return sessionDAO.getActiveSession(userId);
     }
-    
+
     /**
      * Check if user has an active session
      */
     public boolean hasActiveSession(int userId) {
         return sessionDAO.getActiveSession(userId) != null;
     }
-    
+
     /**
      * Get all sessions for today
      */
     public List<ActivitySession> getTodaySessions(int userId) {
         return sessionDAO.getSessionsByDate(userId, LocalDate.now());
     }
-    
+
     /**
      * Get sessions for a specific date
      */
     public List<ActivitySession> getSessionsByDate(int userId, LocalDate date) {
         return sessionDAO.getSessionsByDate(userId, date);
     }
-    
+
     /**
      * Get sessions for a date range
      */
     public List<ActivitySession> getSessionsByDateRange(int userId, LocalDate startDate, LocalDate endDate) {
         return sessionDAO.getSessionsByDateRange(userId, startDate, endDate);
     }
-    
+
     /**
      * Get total time spent on each activity for today
      */
     public Map<String, Integer> getTodayTimeByActivity(int userId) {
         return sessionDAO.getTotalTimeByActivity(userId, LocalDate.now());
     }
-    
+
     /**
      * Get total time spent on each activity for a specific date
      */
     public Map<String, Integer> getTimeByActivity(int userId, LocalDate date) {
         return sessionDAO.getTotalTimeByActivity(userId, date);
     }
-    
+
     /**
      * Get total time for all activities today (in minutes)
      */
@@ -91,7 +91,7 @@ public class TimeTrackingService {
         Map<String, Integer> timeMap = getTodayTimeByActivity(userId);
         return timeMap.values().stream().mapToInt(Integer::intValue).sum();
     }
-    
+
     /**
      * Get time spent on a specific activity type today (in minutes)
      */

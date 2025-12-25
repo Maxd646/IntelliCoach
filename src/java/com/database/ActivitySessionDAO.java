@@ -50,7 +50,7 @@ public class ActivitySessionDAO {
             }
             
         } catch (SQLException e) {
-            System.err.println("❌ Start session failed: " + e.getMessage());
+            System.err.println(" Start session failed: " + e.getMessage());
         }
         
         return null;
@@ -80,7 +80,7 @@ public class ActivitySessionDAO {
             return stmt.executeUpdate() > 0;
             
         } catch (SQLException e) {
-            System.err.println("❌ Stop session failed: " + e.getMessage());
+            System.err.println(" Stop session failed: " + e.getMessage());
             return false;
         }
     }
@@ -100,7 +100,7 @@ public class ActivitySessionDAO {
             }
             
         } catch (SQLException e) {
-            System.err.println("❌ Get active session failed: " + e.getMessage());
+            System.err.println(" Get active session failed: " + e.getMessage());
         }
         
         return null;
@@ -124,7 +124,7 @@ public class ActivitySessionDAO {
             }
             
         } catch (SQLException e) {
-            System.err.println("❌ Get sessions by date failed: " + e.getMessage());
+            System.err.println(" Get sessions by date failed: " + e.getMessage());
         }
         
         return sessions;
@@ -149,7 +149,7 @@ public class ActivitySessionDAO {
             }
             
         } catch (SQLException e) {
-            System.err.println("❌ Get sessions by date range failed: " + e.getMessage());
+            System.err.println(" Get sessions by date range failed: " + e.getMessage());
         }
         
         return sessions;
@@ -174,7 +174,7 @@ public class ActivitySessionDAO {
             }
             
         } catch (SQLException e) {
-            System.err.println("❌ Get total time failed: " + e.getMessage());
+            System.err.println(" Get total time failed: " + e.getMessage());
         }
         
         return timeMap;

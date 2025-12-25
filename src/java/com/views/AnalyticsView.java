@@ -159,6 +159,8 @@ public class AnalyticsView {
         contentBox.getChildren().add(table);
         
         // Pie chart
+
+        
         PieChart pieChart = createPieChart(analytics.getActualMinutes());
         contentBox.getChildren().add(pieChart);
     }

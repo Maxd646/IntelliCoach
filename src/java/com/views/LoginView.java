@@ -184,7 +184,6 @@ public class LoginView {
 
             if (result.isSuccess()) {
                 showMessage(messageLabel, "Login successful!", false);
-                // Navigate to dashboard
                 DashboardView dashboardView = new DashboardView(stage, result.getUser());
                 stage.setScene(dashboardView.createScene());
             } else {
@@ -197,9 +196,7 @@ public class LoginView {
             stage.setScene(registrationView.createScene());
         });
 
-        // Enter key triggers login
         passwordField.setOnAction(e -> loginButton.fire());
-
         Scene scene = new Scene(root, 1000, 700);
         scene.getStylesheets().add(getClass().getResource("/css/styles.css").toExternalForm());
         return scene;
