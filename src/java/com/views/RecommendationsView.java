@@ -237,16 +237,16 @@ public class RecommendationsView {
             default -> "";
         };
     }
-    
+
     private HBox createFooter() {
         HBox footer = new HBox();
         footer.setPadding(new Insets(15));
         footer.setAlignment(Pos.CENTER);
         footer.getStyleClass().add("dashboard-footer");
-        
-        Label footerLabel = new Label("© 2024 IntelliCoach - Personalized Recommendations for Better Productivity");
+
+        Label footerLabel = new Label("© 2025 IntelliCoach - Personalized Recommendations for Better Productivity");
         footerLabel.getStyleClass().add("footer-text");
-        
+
         footer.getChildren().add(footerLabel);
         return footer;
     }

@@ -9,8 +9,6 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
 /**
@@ -56,7 +54,7 @@ public class DashboardView {
         header.getStyleClass().add("header-primary");
         header.setAlignment(Pos.CENTER);
 
-        Label titleLabel = new Label("IntelliCoach Dashboard");
+        Label titleLabel = new Label("IntelliCoach ");
         titleLabel.getStyleClass().addAll("title-large", "title-white");
 
         Label welcomeLabel = new Label("Welcome, " + user.getFullName() + "!");
@@ -211,7 +209,7 @@ public class DashboardView {
         footer.setAlignment(Pos.CENTER);
         footer.getStyleClass().add("dashboard-footer");
 
-        Label footerLabel = new Label("© 2024 IntelliCoach - Empowering Your Productivity Journey");
+        Label footerLabel = new Label("© 2025 IntelliCoach - Empowering Your Productivity Journey");
         footerLabel.getStyleClass().add("footer-text");
 
         footer.getChildren().add(footerLabel);

@@ -7,8 +7,6 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
 /**
@@ -169,7 +167,7 @@ public class RegistrationView {
         footer.setPadding(new Insets(25));
         footer.getStyleClass().add("register-footer-colorful");
 
-        Label footerLabel = new Label("© 2024 IntelliCoach - Join thousands of productive users worldwide!");
+        Label footerLabel = new Label("© 2025 IntelliCoach - Join thousands of productive users worldwide!");
         footerLabel.getStyleClass().add("register-footer-text");
 
         footer.getChildren().add(footerLabel);

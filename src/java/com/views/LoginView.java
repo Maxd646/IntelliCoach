@@ -7,8 +7,6 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
 public class LoginView {
@@ -73,7 +71,7 @@ public class LoginView {
         VBox loginCard = new VBox(25);
         loginCard.setAlignment(Pos.TOP_CENTER);
         loginCard.setPadding(new Insets(40));
-        loginCard.getStyleClass().add("login-card-colorful");
+        loginCard.getStyleClass().add("register-card-colorful");
         loginCard.setMaxWidth(350);
 
         // Login header
@@ -165,7 +163,7 @@ public class LoginView {
         footer.setPadding(new Insets(20));
         footer.getStyleClass().add("colorful-footer");
 
-        Label footerLabel = new Label("© 2024 IntelliCoach - Empowering Productivity Worldwide ");
+        Label footerLabel = new Label("© 2025 IntelliCoach - Empowering Productivity Worldwide ");
         footerLabel.getStyleClass().add("colorful-footer-text");
 
         footer.getChildren().add(footerLabel);

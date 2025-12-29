@@ -4,7 +4,6 @@ import com.interfaces.Repository;
 import com.database.DBConnection;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.List;
 
 public abstract class BaseDAO<T, ID> implements Repository<T, ID> {
 
