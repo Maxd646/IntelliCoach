@@ -21,7 +21,7 @@ Thumbs.db
 
 TestDatabase.java
 # Libraries
-lib/
+lib/*
 database/intellicoach.db
 
 
