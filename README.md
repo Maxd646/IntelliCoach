@@ -20,25 +20,27 @@ The system supports six predefined activity categories that are mandatory for co
 ### Recommended Daily Time Allocation
 
 | Activity Category | Recommended Duration |
-|------------------|---------------------|
-| Academic | 6 – 8 hours |
-| Sleep | 7 – 9 hours |
-| Sport | 1 – 2 hours |
-| Entertainment | 1 – 2 hours |
-| Extra Activity | 1 – 2 hours |
-| Health / Hygiene | 30 – 60 minutes |
+| ----------------- | -------------------- |
+| Academic          | 6 – 8 hours          |
+| Sleep             | 7 – 9 hours          |
+| Sport             | 1 – 2 hours          |
+| Entertainment     | 1 – 2 hours          |
+| Extra Activity    | 1 – 2 hours          |
+| Health / Hygiene  | 30 – 60 minutes      |
 
 These recommendations serve as benchmarks for analytics comparison, productivity scoring, and recommendation generation.
 
 ## Time Tracking Logic
 
 ### Activity Management
+
 - **Single Active Session**: Only one activity can be active at any given time
 - **Automatic Switching**: Starting a new activity automatically stops the current one
 - **No Overlapping**: The system prevents overlapping time entries
 - **Real-time Tracking**: Live timer displays current session duration
 
 ### Data Storage
+
 - All activity sessions are automatically saved to SQLite database
 - Session data includes user ID, activity type, start/end times, and calculated duration
 - Data integrity is maintained through proper database constraints
@@ -46,6 +48,7 @@ These recommendations serve as benchmarks for analytics comparison, productivity
 ## System Architecture
 
 ### Authentication Flow
+
 ```
 Login Page → Dashboard → Feature Pages → Logout
      ↓
@@ -53,6 +56,7 @@ Registration Page (for new users)
 ```
 
 ### Navigation Structure
+
 - **Dashboard**: Central navigation hub
 - **Activity Tracking**: Start/Stop functionality with live timer
 - **Analytics**: Daily, weekly, and monthly time analysis
@@ -62,6 +66,7 @@ Registration Page (for new users)
 ## Analytics and Reporting
 
 ### Analytics Features
+
 - Time distribution analysis across all activity categories
 - Period-based summaries (daily, weekly, monthly)
 - Actual vs. recommended time comparisons
@@ -69,12 +74,14 @@ Registration Page (for new users)
 - Balance and imbalance detection
 
 ### Report Generation
+
 - Detailed activity reports with precise duration calculations
 - Multiple export formats (CSV, TXT)
 - Customizable date ranges
 - Professional formatting for documentation purposes
 
 ### Data Export Fields
+
 - Activity name and category
 - Session start and end timestamps
 - Calculated duration
@@ -84,6 +91,7 @@ Registration Page (for new users)
 ## Recommendation Engine
 
 ### Analysis Criteria
+
 - Time allocation balance across categories
 - Sleep adequacy assessment
 - Entertainment time monitoring
@@ -91,12 +99,14 @@ Registration Page (for new users)
 - Physical activity tracking
 
 ### Recommendation Types
+
 - **Critical Alerts**: For severe imbalances (e.g., insufficient sleep)
 - **Balance Suggestions**: For time distribution optimization
 - **Activity Reminders**: For missing essential activities
 - **Productivity Tips**: For performance improvement
 
 ### Productivity Scoring
+
 - Numerical score (0-100) based on time allocation efficiency
 - Comparison against recommended guidelines
 - Color-coded performance indicators
@@ -107,6 +117,7 @@ Registration Page (for new users)
 ### Core Tables
 
 #### users
+
 - user_id (Primary Key, Auto-increment)
 - username (Unique, Not Null)
 - email (Unique, Not Null)
@@ -115,6 +126,7 @@ Registration Page (for new users)
 - created_at (Timestamp)
 
 #### activity_sessions
+
 - session_id (Primary Key, Auto-increment)
 - user_id (Foreign Key)
 - activity_type (Constrained to 6 categories)
@@ -126,12 +138,14 @@ Registration Page (for new users)
 - created_at (Timestamp)
 
 #### recommended_times
+
 - activity_type (Primary Key)
 - min_minutes (Integer)
 - max_minutes (Integer)
 - description (Text)
 
 #### recommendations
+
 - recommendation_id (Primary Key, Auto-increment)
 - user_id (Foreign Key)
 - recommendation_text (Text)
@@ -144,18 +158,21 @@ Registration Page (for new users)
 ## Technical Implementation
 
 ### JavaFX User Interface
+
 - **Pure JavaFX Implementation**: No FXML files used
 - **Layout Managers**: GridPane, VBox, BorderPane, HBox, FlowPane
 - **Event Handling**: Lambda expressions and functional interfaces
 - **Real-time Updates**: Timeline-based timer functionality
 
 ### Design Patterns
+
 - **Singleton Pattern**: Database connections and service instances
 - **Data Access Object (DAO)**: Database interaction abstraction
 - **Model-View-Controller (MVC)**: Clear separation of concerns
 - **Observer Pattern**: Real-time UI updates
 
 ### Advanced Java Features
+
 - **Lambda Expressions**: Event handling and stream operations
 - **Inner Classes**: Static, non-static, anonymous, and local implementations
 - **Functional Interfaces**: Predicate, Consumer, Function, Supplier
@@ -209,11 +226,13 @@ IntelliCoach/
 ## Prerequisites
 
 ### System Requirements
+
 1. **Java Development Kit (JDK) 11 or higher**
 2. **JavaFX SDK** for GUI functionality
 3. **SQLite JDBC Driver** (included in lib directory)
 
 ### JavaFX Setup
+
 - Download JavaFX SDK from https://openjfx.io/
 - Extract to desired location
 - Update module path in run commands
@@ -221,6 +240,7 @@ IntelliCoach/
 ## Build and Execution
 
 ### Windows Build System
+
 The project includes automated build scripts for Windows:
 
 ```cmd
@@ -232,6 +252,7 @@ build-and-run.bat
 ```
 
 ### Manual Compilation
+
 ```cmd
 # Create build directory
 mkdir build
@@ -244,6 +265,7 @@ java --module-path "path\to\javafx\lib" --add-modules javafx.controls -cp "build
 ```
 
 ### Database Testing
+
 ```cmd
 # Test database connectivity (console application)
 java -cp "build;lib/*" com.TestDatabase
@@ -252,11 +274,13 @@ java -cp "build;lib/*" com.TestDatabase
 ## Usage Instructions
 
 ### Initial Setup
+
 1. Launch the application
 2. Create a new user account via registration
 3. Login with your credentials
 
 ### Activity Tracking
+
 1. Navigate to Activity Tracking page
 2. Select desired activity from dropdown menu
 3. Click START to begin tracking
@@ -265,6 +289,7 @@ java -cp "build;lib/*" com.TestDatabase
 6. Session data is automatically saved
 
 ### Analytics Review
+
 1. Access Analytics page from dashboard
 2. Select analysis period (daily, weekly, monthly)
 3. Choose specific date or date range
@@ -272,6 +297,7 @@ java -cp "build;lib/*" com.TestDatabase
 5. Compare actual vs. recommended time allocations
 
 ### Report Generation
+
 1. Navigate to Reports page
 2. Configure report parameters
 3. Select export format (CSV or TXT)
@@ -279,6 +305,7 @@ java -cp "build;lib/*" com.TestDatabase
 5. Export for external use
 
 ### Productivity Recommendations
+
 1. Access Recommendations page
 2. Select date for analysis
 3. Generate personalized recommendations
@@ -288,6 +315,7 @@ java -cp "build;lib/*" com.TestDatabase
 ## Quality Assurance
 
 ### Validation Checklist
+
 - Start/Stop functionality operates correctly
 - Single active session enforcement
 - Automatic activity switching
@@ -305,16 +333,19 @@ java -cp "build;lib/*" com.TestDatabase
 ### Common Issues
 
 **Database Connection Errors**
+
 - Verify SQLite JDBC driver is present in lib directory
 - Check database file permissions
 - Ensure no other instances are accessing the database
 
 **JavaFX Runtime Errors**
+
 - Confirm JavaFX SDK is properly installed
 - Verify module path configuration
 - Check Java version compatibility
 
 **Compilation Errors**
+
 - Validate Java JDK installation
 - Confirm all dependencies are available
 - Check source file organization
@@ -322,6 +353,7 @@ java -cp "build;lib/*" com.TestDatabase
 ## Technical Support
 
 ### Error Resolution
+
 1. Check system requirements compliance
 2. Verify all dependencies are installed
 3. Review configuration settings
@@ -337,5 +369,15 @@ This application is developed for educational and productivity enhancement purpo
 **IntelliCoach Time Tracking System** represents a complete solution for personal productivity management, combining modern Java development practices with practical time management functionality.
 
 ---
+
+## Contributors
+
+| Name               | Id         | Github                                   |
+| ------------------ | ---------- | ---------------------------------------- |
+| **Daniel Gashaw**  | ETS0387/16 | https://github.com/Maxd646 (Team Leader) |
+| **Abrham Teramed** | ETS0094/16 | https://github.com/Abrom-code            |
+| **Addis Shiferaw** | ETS0099/16 | https://github.com/Adda-19               |
+| **Liyuneh Rstey**  | ETS0841/15 | https://github.com/liyuneh               |
+| **Amir Yimam**     | ETS0169/16 | https://github.com/miro129               |
 
 **IntelliCoach** - Professional Time Tracking and Productivity Management
