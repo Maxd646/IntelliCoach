@@ -370,6 +370,15 @@ This application is developed for educational and productivity enhancement purpo
 
 ---
 
+### Installation & Deployment
+
+## Local Setup
+
+Clone the repository:
+git clone https://github.com/Maxd646/IntelliCoach.git
+
+---
+
 ## Contributors
 
 | Name               | Id         | Github                                   |
